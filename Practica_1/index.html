@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ayuda</title>
+	<link rel="shortcut icon" href="Jquerymobile/images/bitcoin.png">
+	<link rel="stylesheet" href="Jquerymobile/css/themes/my-custom-theme.css" />
+	<link rel="stylesheet" href="Jquerymobile/css/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="Jquerymobile/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="Jquerymobile/themes/DarkPurple.css">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		.index{
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body align="center">
+
+	<div data-role="page" id="inicio" data-theme="a">
+		<div data-role="header">
+			<h1><a href="p1s6/index.html" class="index">inicio</a></h1><br>
+			<h1>Oropeza Millan Javier Alejandro</h1><br>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum porro accusamus ullam perspiciatis, iusto velit error pariatur, minus impedit tenetur nesciunt fugit quia quibusdam repellat, excepturi doloremque expedita asperiores dolores.</p>
+			<img src="doge.png" width="70%" alt="">
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li>
+						<a href="#" class="ui-btn-desactive" data-icon="grid">Inicio</a>
+					</li>
+					<li>
+						<a href="#productos" data-icon="star">productos</a>
+					</li>
+					<li>
+						<a href="#carrito" data-icon="bars">Carrito</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div data_role="page" id="productos" data-theme="a">
+		<div data-role="header">
+			<h1><a href="/" class="index">Producto</a></h1>
+		</div>
+		<div class="ui-content" role="main">
+			<h2>Listado de productos</h2>
+			<ol data-role="listview">
+				<li>Bitcoin</li>
+				<li>Dogecoin</li>
+				<li>Ethereum</li>
+				<li>Polkadot</li>
+			</ol>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li>
+						<a href="#inicio" data-icon="grid">Inicio</a>
+					</li>
+					<li>
+						<a href="#" class="ui-btn-active" data-icon="star">productos</a>
+					</li>
+					<li>
+						<a href="#carrito" data-icon="bars">Carrito</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<div data_role="page" id="carrito" data-theme="a">
+		<div data-role="header">
+			<h1> <a href="/" class="index">Carrito</a></h1>
+		</div>
+		<div class="ui-content" role="main">
+			<h2>Productos en carrito</h2>
+			<ul data-role="listview" data-inset="true">
+				<li>
+					<a href="#"><img src="Jquerymobile/images/Dogecoin.jpg" alt=""><h2>Dogecoin</h2><p>0.15 USD</p></a>
+				</li>
+				<li>
+					<a href="#"><img src="Jquerymobile/images/Bitcoin.png" alt=""><h2>Bitcoin</h2><p>44,014.40 USD</p></a>
+				</li>
+				<li>
+					<a href="#"><img src="Jquerymobile/images/Ethereum.png" alt=""><h2>Ethereum</h2><p>3,140.44 USD</p></a>
+				</li>
+				<li>
+					<a href="#"><img src="Jquerymobile/images/Cardano.jpg" alt=""><h2>Cardano</h2><p>1.10 USD</p></a>
+				</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar">
+				<ul>
+					<li>
+						<a href="#inicio" data-icon="grid">Inicio</a>
+					</li>
+					<li>
+						<a href="#productos" data-icon="star">productos</a>
+					</li>
+					<li>
+						<a href="#" class="ui-btn-active" data-icon="bars">Carrito</a>
+					</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>

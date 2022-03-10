@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js"></script>
+    <style>
+        a{text-decoration: none; color: black;}
+    </style>
+    <title>Práctica JavaScript</title>
+</head>
+<body align="center">
+    <h1><a href="/">Práctica JavaScript</a></h1><hr>
+    
+    <div style="color: rgb(255, 50, 50);" id="div1" onmouseover="change()" onmouseout="comeback()">
+        Texto del div 1
+    </div><br>
+
+    <button onclick="change()">Cambiar Color</button>
+
+    <h2>Productos</h2><hr>
+
+    <h3>Producto 1 <input type="number" value="0" id="p1" onchange="refreshall(document.getElementById('p1').value)"></h3>
+    <h3>Producto 2 <input type="number" value="0" id="p2" onchange="refreshall(document.getElementById('p2').value)"></h3>
+    <h3>Producto 3 <input type="number" value="0" id="p3" onchange="refreshall(document.getElementById('p3').value)"></h3>
+    <h3>Producto 4 <input type="number" value="0" id="p4" onchange="refreshall(document.getElementById('p4').value)"></h3>
+
+    <h3>Total: <input type="number" readonly value="0" id="total"> </h3>
+    
+</body>
+</html>
