@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Lotería</title>
+    <link rel="shortcut icon" href="img/6.jpg">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/loteria.js"></script>
+    <style>
+        h3{
+            color: #FFFFFF;
+            margin-top: 10px; 
+            padding: 5px;
+            border: 10px solid 0,0,0; 
+            border-radius: 6px;
+            background-color: #30353b;
+        }
+        h4{
+            color: #FFFFFF;
+            margin-top: 10px; 
+            padding: 10px;
+            border: 10px solid 0,0,0; 
+            border-radius: 6px;
+            background-color: #30353b;
+        }
+        h1{ 
+            color: #FFFFFF;
+        }
+        .index{
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        .index:hover{
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        .cross{
+            filter: grayscale(100%);
+        }
+    </style>
+</head>
+<body >
+    <div class="container">
+        <div class="row">
+            <div class="col" align="center">
+                <h1 style="margin-top: 10px; padding: 5px;border: 10px solid 0,0,0; border-radius: 6px; background-color: #30353b;"> <a href="/" class="index">LOTERÍA MEXICANA</a></h1><hr>
+                <button class="btn btn-dark" style="margin-right: 10px;" id="start">Reiniciar Juego</button>
+                <button class="btn btn-custom_purple" id="assign" style="display: none;">Sacar Carta</button>
+            </div>
+        </div><br>
+        <div align="center" class="row" id="lista">
+
+        </div><br>
+        <div class="row">
+            <div class="col-12" style="display: none;" id="winner_c1" align="center">
+                <h1 style="margin-top: 10px; padding: 5px;border: 10px solid 0,0,0; border-radius: 6px; background-color: #30353b;" >FELICIDADES <br> GANADOR: CARTA 1</h1>
+            </div>
+            <div class="col-12" style="display: none;" id="winner_c2" align="center">
+                <h1 style="margin-top: 10px; padding: 5px;border: 10px solid 0,0,0; border-radius: 6px; background-color: #30353b;" >FELICIDADES <br> GANADOR: CARTA 2</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 " align="center">
+                <h3>CARTA 1</h3>
+                <table> 
+                    <tr>
+                        <td><img class="img-fluid" src="" alt="" id="c1_1"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_2"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_3"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_4"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="img-fluid" src="" alt="" id="c1_5"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_6"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_7"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_8"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="img-fluid" src="" alt="" id="c1_9"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_10"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_11"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_12"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="img-fluid" src="" alt="" id="c1_13"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_14"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_15"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c1_16"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-sm-6 " align="center">
+                <h3>CARTA 2</h3>
+                <table>
+                    <tr>
+                        <td><img class="img-fluid" src="" alt="" id="c2_1"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_2"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_3"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_4"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="img-fluid" src="" alt="" id="c2_5"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_6"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_7"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_8"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="img-fluid" src="" alt="" id="c2_9"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_10"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_11"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_12"></td>
+                    </tr>
+                    <tr>
+                        <td><img class="img-fluid" src="" alt="" id="c2_13"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_14"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_15"></td>
+                        <td><img class="img-fluid" src="" alt="" id="c2_16"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-12 " id="center_c1" style="display: none;" align="center">
+                <h4>Carta 1 hizo centro</h4>
+            </div>
+            <div class="col-12 " id="jet_c1" style="display: none;" align="center">
+                <h4>Carta 1 hizo chorro</h4>
+            </div>
+            <div class="col-12 " id="four_c1" style="display: none;" align="center">
+                <h4>Carta 1 hizo cuatro esquinas</h4>
+            </div>
+            <div class="col-12 " id="center_c2" style="display: none;" align="center">
+                <h4>Carta 2 hizo centro</h4>
+            </div>
+            <div class="col-12 " id="jet_c2" style="display: none;" align="center">
+                <h4>Carta 2 hizo chorro</h4>
+            </div>
+            <div class="col-12 " id="four_c2" style="display: none;" align="center">
+                <h4>Carta 2 hizo cuatro esquinas</h4>
+            </div>
+            
+        </div>
+    </div>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
